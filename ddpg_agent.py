@@ -1,3 +1,7 @@
+# ATTRIBUTION
+# general code and structure of approach: github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal
+# critic gradient clipping line of code:  github.com/AkshayS21/Reacher-Environment-Continuous-Control-with-DDPG
+
 import numpy as np
 import random
 import copy
