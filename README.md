@@ -29,6 +29,11 @@ If your environment does not already have all of these packages installed, it is
 # Build and Test Instructions
 There are three ways to run the code:
 1. Install all three files in the same directory, and execute the navigation .ipynb notebook file in a Jupyter notebook server , or
-2. Insert the code from 'model.py' and 'dqn_agent.py' into new (inserted) cells in the .ipynb notebook file, and execute everything from the single notebook file within a Jupyter notebook environment, or
+2. Insert the code from 'model.py' and 'ddpg_agent.py' into new (inserted) cells in the .ipynb notebook file, and execute everything from the single notebook file within a Jupyter notebook environment, or
 3. (More difficult): Copy and paste the Python code from within the .ipynb notebook file into a Python source code file, and then execute the program from the command line (with all appropriate dependencies based on your IDE and OS)
 
+# Attribution
+The general approach used in creation of this project, just like the last project (which mostly influenced the ddpg_agent.py and .ipynb files) was from the DDPG implementation of BipedalWalker-v2 here: \
+https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal \
+In addition, after I had working code with the last project (continousControl) - but an agent that wasn't learning - I knew something was wrong in the 'learn' method of the agent. I reviewed DDPG implementations of both Gym and Unity environments, and stumbled on an important line of code (that performs gradient clipping when training the critic) from this repo: \
+https://github.com/AkshayS21/Reacher-Environment-Continuous-Control-with-DDPG-algorithm
